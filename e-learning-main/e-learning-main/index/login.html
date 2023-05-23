@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="../public/images/logo.png">
+	<title>Login SignUp</title>
+	<link rel="stylesheet" type="text/css" href="loginStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<!-- It will redirect to the Home Page after submitting the form -->
+	<script>
+		$(document).ready(function () {
+			$("form").submit(function () {
+				alert("Great Job !");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="form-box">
+		<div class="button-box">
+			<div id="btn"></div>
+			<button type="button" class="toggle-btn" id="log" onclick="login()" style="color: #fff;">Log In</button>
+			<button type="button" class="toggle-btn" id="reg" onclick="register()">Register</button>
+		</div>
+		<div class="social-icons">
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+			<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+			<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+		</div>
+
+		<!-- Login Form -->
+		<form id="login" class="input-group">
+			<div class="inp">
+				<img src="../public/images/user.png"><input type="text" id="email" class="input-field"
+					placeholder="Username or Phone Number" style="width: 88%; border:none;" required="required">
+			</div>
+			<div class="inp">
+				<img src="../public/images/password.png"><input type="password" id="password" class="input-field"
+					placeholder="Password" style="width: 88%; border: none;" required="required">
+			</div>
+			<input type="checkbox" class="check-box">Remember Username
+			<button type="submit" class="submit-btn">Log In</button>
+		</form>
+
+
+		<div class="other" id="other">
+			<div class="instead">
+				<h3>or</h3>
+			</div>
+			<button class="connect" onclick="google()">
+				<img src="../public/images/google.png"><span>Sign in with Google</span>
+			</button>
+		</div>
+
+		<!-- Registration Form -->
+		<form id="register" class="input-group" action="connect. php" method="post">
+			<input type="text" class="input-field" placeholder="Full Name" required="required" name="fullName">
+			<input type="text" class="input-field" placeholder="Phone Number" required="required" name="phoneNumber">
+			<input type="email" class="input-field" placeholder="Email Address" required="required" name="email">
+			<input type="text" class="input-field" placeholder="Domain" required="required" name="domain">
+			<input type="password" class="input-field" placeholder="Create Password" name="psame" required="required" name="password">
+			<input type="password" class="input-field" placeholder="Confirm Password" name="psame" required="required" name="confirmPassword">
+			<input type="checkbox" class="check-box" id="chkAgree" onclick="goFurther()">I agree to the Terms &
+			Conditions
+			<button type="submit" id="btnSubmit" class="submit-btn reg-btn">Register</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

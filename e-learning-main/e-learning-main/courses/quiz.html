@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="../public/images/logo.png">
+	<title>E-Assesment</title>
+	<link rel="stylesheet" type="text/css" href="../courses/quizStyle.css">
+	<script type="text/javascript" src="../index/script.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+<!-- NAVIGATION -->
+    <header>
+        <div class="nav" id="nav">
+            <div id="career-logo">
+            <a href="../index/index.html"><img src="../public/images/logo.png" style="width: 100px;"></a></div>
+            <div class="switch-tab" id="switch-tab" onclick="switchTAB()"><img src="../public/images/menu.png"></div>
+            <ul id="list-switch">
+                <li><a href="../courses/jee.html"><img src="../public/images/book.png" class="icon">JEE</a></li>
+                <li><a href="../courses/gate.html"><img src="../public/images/algo.png" class="icon">GATE</a></li>
+                <li><a href="../courses/computerCourses.html"><img src="../public/images/computer.png" class="icon">Computer Courses</a></li>
+                <li><a href="../courses/computerCourses.html"><img src="../public/images/data.png" class="icon">Data Structures & Algorithm</a></li>
+                <li><a href="../courses/quiz.html"><img src="../public/images/book.png" class="icon">E-Assesment</a></li>
+            </ul>
+            <div class="search" id="search-switch">
+                <input type="text" placeholder="Search" class="srch"><button id="srchbtn"><img src="../public/images/search.png"></button>
+            </div>
+        </div>
+    </header>
+        
+
+<!-- MAIN Heading of Page -->
+	<div class="title" id="title">
+		<span>E-Assesment on CAREER-G</span>
+		<div class="shortdesc"><br>
+			<p>If you think you are Best, it's better to check your knowledge!</p>
+		</div>
+		<button onclick="startquiz()">Select Courses To Check Knowledge</button>
+	</div>
+
+
+<div class="panel" id="panel">
+	
+	<div class="left-side" id="left">
+		<ul>
+			<li onclick="quizt(1)">HOME</li>
+			<li onclick="quizt(2)">JEE Mains</li>
+			<li onclick="quizt(3)">JEE Advanced</li>
+			<li onclick="quizt(4)">GATE</li>
+			<li onclick="quizt(5)">C/C++</li>
+			<li onclick="quizt(6)">Java</li>
+			<li onclick="quizt(7)">Python</li>
+			<li onclick="quizt(8)">JavaScript</li>
+			<li onclick="quizt(9)">Data Structures</li>
+			<li onclick="quizt(10)">Algorithm</li>
+			<li onclick="quizt(11)">Interview Questions</li>
+		</ul>
+	</div>
+
+	<div class="right-side" id="right">
+		<div id="quiz-container">
+			
+			<div id="f1"><div class="quiz-frame main-frame"></div></div>
+
+			<div id="f2"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfzKC9nyq9QCEhXJHzBo-EpXUNXyioCs6Wti0eionSZUSF4Bg/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f3"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeVTLsd_AqZGpbIMnZRm20OKrjjiYSirWBjfCHpWtAsMQU--g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f4"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScH3oeTSwSQteWWs7gaJlS6SvGn68Jfzf9PVkkrJxQyIhNS6Q/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f5"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSe1xs1-41MAbLN7KkXrJwtGdbl5ydxe_vX_nmFRjf6c0wtYkA/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></iframe></div>
+			
+			<div id="f6"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeLEnOP7SWikwuaBBJhrgSVCrXpfLvGRbuQKS6W65J-NSF7zw/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f7"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdG9_MYJKPWxfv5rcWhZaWhK4bamp8F9GQJ-HMIdcY2k3rMig/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f8"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSeFXda2latjlRyrTejHvAn6opSEGaJK4INH30gu7tHT4O8_nw/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f9"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLScclMaw0Ox2U5QvtcMHI3AuNIm9ETMULli6XjpOD-0utJJRrw/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+			
+			<div id="f10"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSd6JUe6AVXjaVfOFVkdXLhVEShwWJx6S4kWNYX7M2SGPnmv1g/viewform?usp=sf_link" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+
+			<div id="f11"><iframe class="quiz-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSf5PW9zH0b15Ug3izJlUrgmjqJI4XMs60PO71jBpZ2jqWTJgA/viewform?usp=sf_link" frameborder="0" marginheiclass="quiz-frame" ght="0" marginwidth="0">Loading…</iframe></div>
+
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="../script.js"></script>
+
+<!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Career<span>Guruji</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                <a>|</a>
+                <a href="#">About</a>
+                <a>|</a>
+                <a href="#">Explore</a>
+                <a>|</a>
+                <a href="#">Courses</a>
+            </p>
+            <br><br>
+            <p class="footer-company-name">Copyright © 2023 <strong>CareerGuruji</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>MIT Academy Of Engineering<br><br>
+                    Pune</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 7475969258</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:sagar00001.co@gmail.com">careerguruji@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Career-G</strong> is an all-in-one, one stop solution for the problem, where the user can access
+                all the required knowledge, skills as well as interact with the community at one place for career
+                building in the field of interest.
+            </p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

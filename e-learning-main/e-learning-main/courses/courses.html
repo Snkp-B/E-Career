@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="../public/images/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Courses</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../courses/courseStyle.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<a href="../index/index.html"><img src="../public/images/logo.png" style="width: 100px;"></a></div>
+			<ul>
+				<li><a class="active" href="../index/index.html">Home</a></li>
+				<li><a href="../courses/courses.html">Courses</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search Courses"><img src="../public/images/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="../index/login.html">LogIn / SignUp</a>
+			<img src="../public/images/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="../public/images/close.png" alt=""></div>
+			<div class="user">
+				<img src="../public/images/Deep.jpg" alt="Username">
+				<p>Deepchand_P</p>
+			</div>
+			<ul>
+				<li><a class="active" href="../index/index.html">Home</a></li>
+				<li><a href="../courses/courses.html">Courses</a></li>
+				<li><a href="#services_section">Explore</a></li>
+				<li><a href="#team_section">Discuss</a></li>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	<!-- Some Popular Courses -->
+	<div id="courses">
+		<span>Domain Related Courses on Career-G</span>
+	</div>
+	<br><br>
+	<div class="course">
+		<center>
+			<div class="cbox">
+				<div class="det"><a href="../courses/jee.html"><img src="../public/images/book.png">JEE Preparation</a>
+				</div>
+				<div class="det"><a href="../courses/gate.html"><img src="../public/images/algo.png">GATE Preparation</a>
+				</div>
+				<div class="det"><a href="../courses/jee.html"><img src="../public/images/d1.png">NEET Preparation</a></div>
+				<div class="det"><a href="../courses/quiz.html"><img src="../public/images/book.png">E-Assesment</a></div>
+			</div>
+		</center>
+		<div class="cbox">
+			<div class="det"><a href="../courses/engineering.html"><img src="../public/images/computer.png">Engineering
+					</a></div>
+			<div class="det"><a href="../courses/medical.html"><img src="../public/images/d1.png">Medical Science</a></div>		
+			<div class="det"><a href="../courses/bcom.html"><img src="../public/images/interview.png">BCom
+					</a></div>
+		</div>
+	</div>
+
+    <!-- FOOTER -->
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+			<h3>Career<span>Guruji</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+				<a>|</a>
+				<a href="#">About</a>
+				<a>|</a>
+				<a href="#">Explore</a>
+				<a>|</a>
+				<a href="#">Courses</a>
+			</p>
+			<br><br>
+			<p class="footer-company-name">Copyright © 2023 <strong>CareerGuruji</strong> All rights reserved</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p>MIT Academy Of Engineering<br><br>
+					Pune</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+91 7475969258</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:sagar00001.co@gmail.com">careerguruji@gmail.com</a></p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>About the company</span>
+				<strong>Career-G</strong> is an all-in-one, one stop solution for the problem, where the user can access
+				all the required knowledge, skills as well as interact with the community at one place for career
+				building in the field of interest.
+			</p>
+			<div class="footer-icons">
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

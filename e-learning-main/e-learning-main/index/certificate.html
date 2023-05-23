@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="../public/images/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Certificate</title>
+    <link rel="stylesheet" href="./certificateStyle.css">
+</head>
+<body>
+    <header>
+        <img src="../public/images/logo.png" alt="icon">
+        <h4>Get your certificate of completion</h4>
+        <h1><a href="../index/index.html" target="_blank">CAREER-G</a></h1>
+    </header>
+
+    <main>
+        <label for="name">Type Your Name</label>
+        <input placeholder="Name To Dispaly" type="text" name="Name" id="name" autocomplete="name">
+        <button id="submit">Get Ceretificate</button>
+    </main>
+
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="certificate.js"></script>
+</body>
+</html>

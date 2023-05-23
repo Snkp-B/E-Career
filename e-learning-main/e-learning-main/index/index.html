@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="png" href="../public/images/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Career-G</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script>
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop()) {
+				$('nav').addClass('black');
+			} else {
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<a href="../index/index.html"><img src="../public/images/logo.png" style="width: 100px;"></a></div>
+			<ul>
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="../courses/courses.html">Courses</a></li>
+				<li><a href="#services_section">Explore</a></li>
+				<li><a href="../Forum/forums.html">Forum</a></li>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search Courses"><img src="../public/images/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="../index/login.html">LogIn / SignUp</a>
+			<img src="../public/images/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>
+				<h1>CAREER-G</h1>
+				</p>
+				<h5>Your One Stop Destination to Learn, Explore & Grow!</h5>
+				<h1>Best Online Education</h1>
+				<h5>Career-G is an all-in-one, one stop solution for the problem, where the user can access all the
+					required knowledge, skills as well as interact with the community at one place for career building
+					in the field of interest.</h5>
+				<!-- <a href="./certificate.html"><button>GET CERTIFICATE NOW</button></a> -->
+				<a href="../courses/courses.html"><button>VIEW COURSE</button></a>
+			</div>
+			<div class="online-learning">
+				<img src="../public/images/online-learning.png" alt="online-learning">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="../public/images/close.png" alt=""></div>
+			<div class="user">
+				<img src="../public/images/Deep.jpg" alt="Username">
+				<p>Deepchand_P</p>
+			</div>
+			<ul>
+				
+				<li><a class="active" href="#">Home</a></li>
+				<li><a href="../courses/courses.html">Courses</a></li>
+				<li><a href="#services_section">Explore</a></li>
+				<li><a href="#team_section">Discuss</a></li>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	
+	<!-- EXPLORE -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+			<center>
+				<p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Explore</p>
+			</center>
+		</div>
+		<a href="../courses/jee.html">
+			<div class="s-card"><img src="../public/images/brainbooster.png">
+				<p>Building Concepts for Competitive Exams</p>
+			</div>
+		</a>
+		<a href="../courses/samplePapers.html">
+			<div class="s-card"><img src="../public/images/papers.jpg">
+				<p>Sample Papers of Various Competitive Exams</p>
+			</div>
+		</a>
+		<a href="../courses/computerCourses.html">
+			<div class="s-card"><img src="../public/images/computer-courses.png">
+				<p>Free Online Computer Courses</p>
+			</div>
+		</a>
+		<a href="#contactus_section">
+			<div class="s-card"><img src="../public/images/discussion.png">
+				<p>Discussion with Our Tutors & Mentors</p>
+			</div>
+		</a>
+		<a href="../courses/quiz.html">
+			<div class="s-card"><img src="../public/images/p3.png">
+				<p>Daily Brain Teasing Questions to Improve IQ</p>
+			</div>
+		</a>
+		<a href="#contactus_section">
+			<div class="s-card"><img src="../public/images/help.png">
+				<p>24x7 Online Support</p>
+			</div>
+		</a>
+	</div>
+
+
+	<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center>
+			<p style="font-size: 50px; padding: 100px">About</p>
+		</center>
+		<div class="about-content">
+			<div class="side-image">
+				<img class="sideImage" src="../public/images/about.png">
+			</div>
+			<div class="side-text">
+				<h2>Benefits About Online Learning Expertise</h2>
+				<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+					beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+					directed research.
+					<br><br>The majority of students who attend college on tight budgets are concerned
+					that they won't have any opportunity in the future if they choose a profession
+					based only on their interests or fail to get a solid job right after finishing their
+					studies.
+					<br><br>Furthermore, students do not receive adequate preparation for aptitude
+					tests, interview preparation, and technical trainings. Students also lack the
+					necessary direction to develop their own company beginning ideas.
+					<br><br><b>Career-G</b> is the platform
+					where students will get complete information, support, training, career guidance
+					and resources/study materials for enhancing their skills and developing career of
+					their own choice.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center>
+			<p style="font-size: 40px; padding: 100px; padding-bottom: 40px;">Portfolio</p>
+		</center>
+		<div class="content">
+			<p>
+				“<b><em>Online Courses:</em></b> Online learning is not the next big thing, it is the now big thing.”
+				“<b><em>Earn A Certificates:</em></b> Certificates dosen't matters but, it shows a proof of your
+				skills.”
+				“<b><em>Learn with Expert:</em></b> Learning from the experts, shows you in a different way from
+				others.”
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>We're increasing this data every year</p>
+		<div class="smbox">
+			<span>
+				<center>
+					<div class="data">1500+</div>
+					<div class="det">Success Stories</div>
+				</center>
+			</span>
+			<span>
+				<center>
+					<div class="data">320+</div>
+					<div class="det">Trusted Tuitor</div>
+				</center>
+			</span>
+			<span>
+				<center>
+					<div class="data">550+</div>
+					<div class="det">Placed Students</div>
+				</center>
+			</span>
+			<span>
+				<center>
+					<div class="data">467+</div>
+					<div class="det">Total Courses</div>
+				</center>
+			</span>
+		</div>
+	</div>
+
+
+	<!-- CONTACT US -->
+	<div class="diffSection" id="contactus_section">
+		<center>
+			<p style="font-size: 50px; padding: 100px">Contact Us</p>
+		</center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+				<form action="mailto:prajapatideepchand12@gmail.com" method="post" enctype="text/plain">
+					<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name
+						<span class="imp">*</span></label><br>
+					<center>
+						<input type="text" name="First Name" style="margin-right: 10px; width: 175px"
+							required="required"><input type="text" name="Last Name" style="width: 175px"
+							required="required"><br>
+					</center>
+					<label>Email <span class="imp">*</span></label><br>
+					<input type="email" name="Mail" style="width: 100%" required="required"><br>
+					<label>Mobile <span class="imp">*</span></label><br>
+					<input type="text" name="Mobile No." style="width: 100%" required="required"><br>
+					<label>Message</label><br>
+					<textarea name="Message" style="font-family:Cambria;"></textarea><br>
+					<button type="submit" id="csubmit">Send Message</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="footer-distributed">
+
+		<div class="footer-left">
+			<h3>Career<span>Guruji</span></h3>
+
+			<p class="footer-links">
+				<a href="#">Home</a>
+				<a>|</a>
+				<a href="#">About</a>
+				<a>|</a>
+				<a href="#">Explore</a>
+				<a>|</a>
+				<a href="#">Courses</a>
+			</p>
+			<br><br>
+			<p class="footer-company-name">Copyright © 2023 <strong>CareerGuruji</strong> All rights reserved</p>
+		</div>
+
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p>MIT Academy Of Engineering<br><br>
+					Pune</p>
+			</div>
+
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>+91 7475969258</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p><a href="mailto:sagar00001.co@gmail.com">careerguruji@gmail.com</a></p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>About the company</span>
+				<strong>Career-G</strong> is an all-in-one, one stop solution for the problem, where the user can access
+				all the required knowledge, skills as well as interact with the community at one place for career
+				building in the field of interest.
+			</p>
+			<div class="footer-icons">
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
